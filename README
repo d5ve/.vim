@@ -1,0 +1,25 @@
+My vim setup.
+
+Currently mostly based upon: http://stevelosh.com/blog/2010/09/coming-home-to-vim/
+
+I also tried Janus: Carlhuda's vim Distribution, at https://github.com/carlhuda/janus
+This worked OK on my macbook, but has a requirement for rake, the Ruby
+Make-alike. Ruby isn't installed on most server OSs, so it was hard to set up
+on my other machines.
+
+USAGE:
+    # Backup current setup
+    mv ~/.vimrc ~/.vim
+    mv ~/.vim ~/.vim.BACKUP
+
+    # Grab project from github
+    git clone git@github.com:d5ve/.vim.git
+    
+    # Symlink the rc file
+    ln -s ~/.vim/vimrc ~/.vimrc
+
+    # And we're good to go
+
+Currently this sets up some useful shortcuts, forces you to use hjkl for
+navigation, and installs a few plugins.
+
