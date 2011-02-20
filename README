@@ -13,8 +13,11 @@ USAGE:
     mv ~/.vim ~/.vim.BACKUP
 
     # Grab project from github
+    # Readonly:
+    git clone git://github.com/d5ve/.vim.git    
+    # Readwrite:
     git clone git@github.com:d5ve/.vim.git
-    
+
     # Symlink the rc file
     ln -s ~/.vim/vimrc ~/.vimrc
 
