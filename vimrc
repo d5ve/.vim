@@ -39,8 +39,9 @@ set history=1000
 nnoremap ; :
 
 "" Display trailing whitespace and tabs.
+" FAILED - This never worked well, and made mouse copy break.
 "set list listchars=tab:>-,trail:CUNT
-set list listchars=tab:>-
+"set list listchars=tab:>-
 
 "" Searching/moving 
 nnoremap / /\v
