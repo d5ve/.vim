@@ -57,6 +57,7 @@ nnoremap <leader><space> :noh<cr>
 set title                           "set the terminal title
 set backspace=indent,eol,start      "make backspaces delete sensibly
 set wildmode=longest,list           "better tab filename completion
+set hidden                          "Allow buffer changes with unsaved changes.
 
 "" Tab options - whitespace!
 set tabstop=4           "indentation levels every four columns
