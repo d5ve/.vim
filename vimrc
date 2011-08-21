@@ -43,8 +43,9 @@ set cul                                           " highlight current line
 set history=1000
 
 " Allow ;w, rather than shift : unshift w etc.
-" TODO: Look at using <space> for this!
-nnoremap ; :
+" nnoremap ; :
+" Use space instead, as it is easy to hit.
+nnoremap <space> :
 
 "" Display trailing whitespace and tabs.
 " FAILED - This never worked well, and made mouse copy break.
