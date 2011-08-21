@@ -36,7 +36,6 @@ set modelines=1                     "always show the filename
 set ruler                           "always show line and coll numbers
 set laststatus=2
 set statusline="%l/%L,%c%V"
-
 set cul                                           " highlight current line
 ""hi CursorLine term=none cterm=none ctermbg=3      " adjust color
 
@@ -44,6 +43,7 @@ set cul                                           " highlight current line
 set history=1000
 
 " Allow ;w, rather than shift : unshift w etc.
+" TODO: Look at using <space> for this!
 nnoremap ; :
 
 "" Display trailing whitespace and tabs.
@@ -91,6 +91,13 @@ map <leader>p !perltidy --perl-best-practices --maximum-line-length=100 -q<CR>
 nnoremap <leader>W :%s/\s\+$//g<cr>:let @/=''<CR>
 " Hitting jj in insert-mode mimics escape
 inoremap jj <ESC>
+
+" Handle common case typos
+:command WQ wq
+:command Wq wq
+"":command W w -- May conflict with "Remove all trailing whitespace in file"
+""above
+:command Q q
 
 "" Syntax highlighting options
 syntax on                                       "turn on syntax highlighting
