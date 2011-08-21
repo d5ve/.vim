@@ -1,5 +1,10 @@
 "" Much taken from http://stevelosh.com/blog/2010/09/coming-home-to-vim/
 
+"" Other resources
+"" http://stackoverflow.com/questions/164847/what-is-in-your-vimrc
+"" http://news.ycombinator.com/item?id=2907730
+
+
 "" Needed on some linux distros.
 "" see http://www.adamlowe.me/2009/12/vim-destroys-all-other-rails-editors.html
 filetype off 
@@ -31,6 +36,9 @@ set modelines=1                     "always show the filename
 set ruler                           "always show line and coll numbers
 set laststatus=2
 set statusline="%l/%L,%c%V"
+
+set cul                                           " highlight current line
+""hi CursorLine term=none cterm=none ctermbg=3      " adjust color
 
 "" Longer history for commands and searches (default: 20)
 set history=1000
