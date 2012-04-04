@@ -53,8 +53,8 @@ nnoremap <space> :
 "set list listchars=tab:>-
 
 "" Searching/moving 
-nnoremap / /\v
-vnoremap / /\v
+"nnoremap / /\v
+"vnoremap / /\v
 set ignorecase
 set smartcase
 set incsearch
@@ -92,6 +92,10 @@ map <leader>p !perltidy --perl-best-practices --maximum-line-length=100 -q<CR>
 nnoremap <leader>W :%s/\s\+$//g<cr>:let @/=''<CR>
 " Hitting jj in insert-mode mimics escape
 inoremap jj <ESC>
+
+" Hit r to replace the currently highlighted selection with the 
+" contents of the clipboard.
+vmap r "_dP     
 
 " Handle common case typos
 :command WQ wq
