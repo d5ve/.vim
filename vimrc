@@ -90,8 +90,6 @@ map <leader>p !perltidy --perl-best-practices --maximum-line-length=100 -q<CR>
 
 " Remove all trailing whitespace in file
 nnoremap <leader>W :%s/\s\+$//g<cr>:let @/=''<CR>
-" Hitting jj in insert-mode mimics escape
-inoremap jj <ESC>
 
 " Hit r to replace the currently highlighted selection with the 
 " contents of the clipboard.
